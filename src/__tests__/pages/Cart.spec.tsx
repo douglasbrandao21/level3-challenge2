@@ -68,7 +68,7 @@ describe('Dashboard', () => {
     expect(getByText('8000')).toBeTruthy();
   });
 
-  it('should be able to calculate the cart total', async () => {
+  it('should be able to show the total quantity of itens in the cart', async () => {
     const { getByText } = render(<Cart />);
 
     expect(getByText('15 itens')).toBeTruthy();
